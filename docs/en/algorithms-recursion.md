@@ -329,11 +329,11 @@ public static int factorial(int n) {
 - **Data Processing**: Parsing nested data structures
 
 ## Related Topics
-- [**Binary Trees**](../data-structures-non-linear-tree) - Recursive tree operations
-- [**Divide and Conquer**](../algorithms-divide-and-conquer) - Recursive problem-solving strategy
-- [**Backtracking**](../algorithms-backtracking) - Recursive search with pruning
-- [**Dynamic Programming**](../algorithms-dynamic-programming) - Optimized recursion
-- [**Binary Search**](../algorithms-searching-binary-search) - Recursive searching
+- [**Binary Trees**](./data-structures-non-linear-tree) - Recursive tree operations
+- [**Divide and Conquer**](./algorithms-divide-and-conquer) - Recursive problem-solving strategy
+- [**Backtracking**](./algorithms-backtracking) - Recursive search with pruning
+- [**Dynamic Programming**](./algorithms-dynamic-programming) - Optimized recursion
+- [**Binary Search**](./algorithms-searching-binary-search) - Recursive searching
 - Base case: 0! = 1 or 1! = 1
 - Recursive case: factorial(n) = n × factorial(n-1)
 

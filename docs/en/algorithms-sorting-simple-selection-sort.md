@@ -13,7 +13,7 @@ Selection Sort is an intuitive sorting algorithm that improves upon bubble sort 
 - [Implementation](#implementation)
 - [Complexity Analysis](#complexity-analysis)
 - [Advantages & Disadvantages](#advantages--disadvantages)
-- [Study Notes](#study-notes)
+- [Study Notes](#study-notes-for-students)
 
 ## Algorithm Concept
 
@@ -294,8 +294,8 @@ if (min != i) {
 - **Benchmark Baseline**: Comparing against other algorithms
 
 ## Related Topics
-- [**Bubble Sort**](../algorithms-sorting-simple-bubble-sort) - Another simple O(n²) algorithm
-- [**Insertion Sort**](../algorithms-sorting-simple-insertion-sort) - More efficient O(n²) alternative
+- [**Bubble Sort**](./algorithms-sorting-simple-bubble-sort) - Another simple O(n²) algorithm
+- [**Insertion Sort**](./algorithms-sorting-simple-insertion-sort) - More efficient O(n²) alternative
 - **Heap Sort** - Uses selection principle efficiently
 - **Quick Select** - Finding kth element
 - **Sorting Analysis** - Algorithm comparison

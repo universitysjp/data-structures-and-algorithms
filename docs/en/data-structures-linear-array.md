@@ -13,7 +13,7 @@ Arrays are one of the most fundamental and widely-used data structures in comput
 - [Implementation](#implementation)
 - [Complexity Analysis](#complexity-analysis)
 - [Advantages & Disadvantages](#advantages--disadvantages)
-- [Study Notes](#study-notes)
+- [Study Notes](#study-notes-for-students)
 - [Practice Problems](#practice-problems)
 
 ## Key Characteristics
@@ -285,12 +285,12 @@ for (int element : arr) { /* process element */ }
 5. Sliding window maximum
 
 ## Related Topics
-- [**Searching Algorithms**](../algorithms) - Linear and Binary Search
-- [**Sorting Algorithms**](../algorithms) - Array-based sorting
+- [**Searching Algorithms**](./algorithms) - Linear and Binary Search
+- [**Sorting Algorithms**](./algorithms) - Array-based sorting
 - **Dynamic Arrays** - Resizable arrays
-- [**Linked Lists**](../data-structures-linear-linked-list) - Alternative linear structure
-- [**Stacks**](../data-structures-linear-stack) - Array-based implementation
-- [**Queues**](../data-structures-linear-queue) - Array-based implementation
+- [**Linked Lists**](./data-structures-linear-linked-list) - Alternative linear structure
+- [**Stacks**](./data-structures-linear-stack) - Array-based implementation
+- [**Queues**](./data-structures-linear-queue) - Array-based implementation
 
 ## Real-World Applications
 - **Database Systems**: Storage of records in table rows

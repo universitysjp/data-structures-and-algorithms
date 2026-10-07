@@ -13,7 +13,7 @@ A **Stack** is a linear data structure that follows the **Last-In-First-Out (LIF
 - [Implementation](#implementation)
 - [Applications](#applications)
 - [Complexity Analysis](#complexity-analysis)
-- [Study Notes](#study-notes)
+- [Study Notes](#study-notes-for-students)
 - [Practice Problems](#practice-problems)
 
 ## Key Characteristics
@@ -327,11 +327,11 @@ if (!stack.isEmpty()) {
 4. **Next greater element** finder
 
 ## Related Topics
-- [**Queues**](../data-structures-linear-queue) - FIFO counterpart to stacks
-- [**Recursion**](../algorithms-recursion) - Uses implicit stack
+- [**Queues**](./data-structures-linear-queue) - FIFO counterpart to stacks
+- [**Recursion**](./algorithms-recursion) - Uses implicit stack
 - **Expression Evaluation** - Stack applications
-- [**Backtracking**](../algorithms-backtracking) - Stack-based algorithms
-- [**Tree Traversal**](../data-structures-non-linear-tree) - Stack-based traversals
+- [**Backtracking**](./algorithms-backtracking) - Stack-based algorithms
+- [**Tree Traversal**](./data-structures-non-linear-tree) - Stack-based traversals
 
 ```java
 // Pop operation

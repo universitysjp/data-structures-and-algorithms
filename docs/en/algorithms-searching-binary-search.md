@@ -139,10 +139,10 @@ Binary search is the foundation for many advanced algorithms:
 3. Binary search on answer (optimization problems)
 
 ## Related Topics
-- [Linear Search](../algorithms-searching-linear-search) - Alternative searching method
-- [Recursion](../algorithms-recursion) - Fundamental concept for recursive implementation
-- [Divide and Conquer](../algorithms-divide-and-conquer) - Core algorithmic strategy
-- [Sorting Algorithms](../algorithms) - Prerequisite for binary search
+- [Linear Search](./algorithms-searching-linear-search) - Alternative searching method
+- [Recursion](./algorithms-recursion) - Fundamental concept for recursive implementation
+- [Divide and Conquer](./algorithms-divide-and-conquer) - Core algorithmic strategy
+- [Sorting Algorithms](./algorithms) - Prerequisite for binary search
 - **Much faster than linear search for large arrays**
 
 ## Recursive vs Iterative

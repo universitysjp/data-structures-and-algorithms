@@ -318,10 +318,10 @@ sort(a, aux, mid + 1, hi);
 - **Bioinformatics**: Sorting genetic sequence data
 
 ## Related Topics
-- [**Quick Sort**](../algorithms-sorting-advanced-quick-sort) - Alternative O(n log n) algorithm
+- [**Quick Sort**](./algorithms-sorting-advanced-quick-sort) - Alternative O(n log n) algorithm
 - **Heap Sort** - In-place O(n log n) sorting
-- [**Divide and Conquer**](../algorithms-divide-and-conquer) - Core algorithmic strategy
-- [**Recursion**](../algorithms-recursion) - Fundamental technique used
+- [**Divide and Conquer**](./algorithms-divide-and-conquer) - Core algorithmic strategy
+- [**Recursion**](./algorithms-recursion) - Fundamental technique used
 - **External Sorting** - Large dataset sorting
 - **Parallel Algorithms** - Concurrent merge sort
 

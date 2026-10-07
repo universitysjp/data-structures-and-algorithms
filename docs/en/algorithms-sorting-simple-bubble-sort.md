@@ -93,10 +93,10 @@ public static void sort(int[] a) {
 - **When stability is required** and dataset is tiny
 
 ## Related Algorithms
-- [Selection Sort](../algorithms-sorting-simple-selection-sort) - Another O(n²) algorithm with fewer swaps
-- [Insertion Sort](../algorithms-sorting-simple-insertion-sort) - More efficient O(n²) algorithm
-- [Merge Sort](../algorithms-sorting-advanced-merge-sort) - O(n log n) stable sort
-- [Quick Sort](../algorithms-sorting-advanced-quick-sort) - O(n log n) average case
+- [Selection Sort](./algorithms-sorting-simple-selection-sort) - Another O(n²) algorithm with fewer swaps
+- [Insertion Sort](./algorithms-sorting-simple-insertion-sort) - More efficient O(n²) algorithm
+- [Merge Sort](./algorithms-sorting-advanced-merge-sort) - O(n log n) stable sort
+- [Quick Sort](./algorithms-sorting-advanced-quick-sort) - O(n log n) average case
 
 ## Implementation
 - BubbleSort.java
