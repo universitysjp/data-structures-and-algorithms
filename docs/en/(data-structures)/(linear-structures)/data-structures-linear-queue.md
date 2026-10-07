@@ -18,7 +18,94 @@ A typical queue supports the following core operations:
 
 ### Queue Implementation in Java
 
-### [Full Code Example](https://github.com/universitysjp/data-structures-and-algorithms/blob/main/Data%20Structures/Linear/Queue/Queue.java)
+### Complete implementation: `Data Structures/Linear/Queue/Queue.java`
+
+```java
+class QueueStructure {
+    private int maxSize;
+    private int[] queueArray;
+    private int front;
+    private int rear;
+    private int nItems;
+
+    public QueueStructure(int size) {
+        maxSize = size;
+        queueArray = new int[maxSize];
+        front = 0;
+        rear = -1;
+        nItems = 0;
+    }
+
+    // Enqueue operation
+    public void enqueue(int value) {
+        if (nItems == maxSize) {
+            System.out.println("Queue is full");
+        } else {
+            if (rear == maxSize - 1) {
+                rear = -1; // Wrap around
+            }
+            queueArray[++rear] = value;
+            nItems++;
+        }
+    }
+
+    // Dequeue operation
+    public int dequeue() {
+        if (nItems == 0) {
+            System.out.println("Queue is empty");
+            return -1;
+        } else {
+            int temp = queueArray[front++];
+            if (front == maxSize) {
+                front = 0; // Wrap around
+            }
+            nItems--;
+            return temp;
+        }
+    }
+
+    // Front operation
+    public int front() {
+        if (nItems == 0) {
+            System.out.println("Queue is empty");
+            return -1;
+        } else {
+            return queueArray[front];
+        }
+    }
+
+    // isEmpty operation
+    public boolean isEmpty() {
+        return (nItems == 0);
+    }
+
+    // Size operation
+    public int size() {
+        return nItems;
+    }
+}
+
+public class Queue {
+    public static void main(String[] args) {
+        QueueStructure queue = new QueueStructure(5);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+
+        System.out.println("Front element: " + queue.front());
+        System.out.println("Queue size: " + queue.size());
+
+        queue.dequeue();
+        System.out.println("Front element after dequeue: " + queue.front());
+        System.out.println("Is queue empty? " + queue.isEmpty());
+    }
+}
+
+// Front element: 10
+// Queue size: 3
+// Front element after dequeue: 20
+// Is queue empty? false
+```
 
 #### 1. **Enqueue Operation**
 
@@ -137,7 +224,114 @@ The operations in a Circular Queue are similar to those in a standard queue but 
 
 ### Circular Queue Implementation in Java
 
-### [Full Code Example](https://github.com/universitysjp/data-structures-and-algorithms/blob/main/Data%20Structures/Linear/Queue/CircularQueue.java)
+### Complete implementation: `Data Structures/Linear/Queue/CircularQueue.java`
+
+```java
+class CircularQueueStructure {
+    private int maxSize;
+    private int[] queueArray;
+    private int front;
+    private int rear;
+    private int nItems;
+
+    public CircularQueueStructure(int size) {
+        maxSize = size;
+        queueArray = new int[maxSize];
+        front = 0;
+        rear = -1;
+        nItems = 0;
+    }
+
+    // Enqueue operation
+    public void enqueue(int value) {
+        if (nItems == maxSize) {
+            System.out.println("Circular Queue is full");
+        } else {
+            rear = (rear + 1) % maxSize;
+            queueArray[rear] = value;
+            nItems++;
+        }
+    }
+
+    // Dequeue operation
+    public int dequeue() {
+        if (nItems == 0) {
+            System.out.println("Circular Queue is empty");
+            return -1;
+        } else {
+            int temp = queueArray[front];
+            front = (front + 1) % maxSize;
+            nItems--;
+            return temp;
+        }
+    }
+
+    // Front operation
+    public int front() {
+        if (nItems == 0) {
+            System.out.println("Circular Queue is empty");
+            return -1;
+        } else {
+            return queueArray[front];
+        }
+    }
+
+    // isEmpty operation
+    public boolean isEmpty() {
+        return (nItems == 0);
+    }
+
+    // isFull operation
+    public boolean isFull() {
+        return (nItems == maxSize);
+    }
+
+    // Size operation
+    public int size() {
+        return nItems;
+    }
+}
+
+public class CircularQueue {
+    public static void main(String[] args) {
+        CircularQueueStructure cQueue = new CircularQueueStructure(5);
+        cQueue.enqueue(10);
+        cQueue.enqueue(20);
+        cQueue.enqueue(30);
+        cQueue.enqueue(40);
+        cQueue.enqueue(50);
+
+        // Attempt to enqueue when full
+        cQueue.enqueue(60); // Should print "Circular Queue is full"
+
+        System.out.println("Front element: " + cQueue.front());
+        System.out.println("Queue size: " + cQueue.size());
+
+        cQueue.dequeue();
+        cQueue.dequeue();
+
+        System.out.println("Front element after dequeue: " + cQueue.front());
+        System.out.println("Is queue full? " + cQueue.isFull());
+        System.out.println("Is queue empty? " + cQueue.isEmpty());
+
+        // Enqueue more elements to test wrap-around
+        cQueue.enqueue(60);
+        cQueue.enqueue(70);
+
+        System.out.println("Front element: " + cQueue.front());
+        System.out.println("Queue size: " + cQueue.size());
+    }
+}
+
+// Circular Queue is full
+// Front element: 10
+// Queue size: 5
+// Front element after dequeue: 30
+// Is queue full? false
+// Is queue empty? false
+// Front element: 30
+// Queue size: 5
+```
 
 #### 1. **Enqueue Operation**
 
@@ -264,7 +458,85 @@ A typical priority queue supports the following core operations:
 
 ### Priority Queue Implementation in Java
 
-### [Full Code Example](https://github.com/universitysjp/data-structures-and-algorithms/blob/main/Data%20Structures/Linear/Queue/PriorityQueue.java)
+### Complete implementation: `Data Structures/Linear/Queue/PriorityQueue.java`
+
+```java
+import java.util.PriorityQueue;
+import java.util.Comparator;
+
+class PriorityQueueStructure {
+    public static void main(String[] args) {
+        // Default PriorityQueue (Min-Heap)
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+        // Adding elements to min-heap
+        minHeap.add(30);
+        minHeap.add(10);
+        minHeap.add(20);
+        minHeap.add(40);
+        minHeap.add(50);
+
+        // Poll operation (removes and returns the smallest element)
+        System.out.println("Removed element: " + minHeap.poll()); // Removes 10
+
+        // Peek operation (retrieves the smallest element without removing)
+        System.out.println("Front element: " + minHeap.peek()); // Should be 20
+
+        // Size of the priority queue
+        System.out.println("Priority Queue size: " + minHeap.size());
+
+        // Check if the priority queue is empty
+        System.out.println("Is Priority Queue empty? " + minHeap.isEmpty());
+
+        // Iterate through the priority queue
+        System.out.print("Elements in Priority Queue: ");
+        for (int num : minHeap) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Creating a Max-Heap using a Comparator
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+
+        // Adding elements to max-heap
+        maxHeap.add(30);
+        maxHeap.add(10);
+        maxHeap.add(20);
+        maxHeap.add(40);
+        maxHeap.add(50);
+
+        // Poll operation (removes and returns the largest element)
+        System.out.println("Removed element from Max-Heap: " + maxHeap.poll()); // Removes 50
+
+        // Peek operation (retrieves the largest element without removing)
+        System.out.println("Front element in Max-Heap: " + maxHeap.peek()); // Should be 40
+
+        // Size of the max-heap
+        System.out.println("Max-Heap size: " + maxHeap.size());
+
+        // Check if the max-heap is empty
+        System.out.println("Is Max-Heap empty? " + maxHeap.isEmpty());
+
+        // Iterate through the max-heap
+        System.out.print("Elements in Max-Heap: ");
+        for (int num : maxHeap) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+// Removed element: 10
+// Front element: 20
+// Priority Queue size: 4
+// Is Priority Queue empty? false
+// Elements in Priority Queue: 20 30 40 50
+// Removed element from Max-Heap: 50
+// Front element in Max-Heap: 40
+// Max-Heap size: 4
+// Is Max-Heap empty? false
+// Elements in Max-Heap: 40 30 20 10
+```
 
 #### 1. **Add (Enqueue) Operation**
 

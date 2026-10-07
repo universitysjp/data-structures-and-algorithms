@@ -70,7 +70,18 @@ In recursion, a method includes a call to itself, creating a chain of function c
 
 ## Classic Examples
 
-### 📁 [Complete Implementation](https://github.com/universitysjp/data-structures-and-algorithms/blob/main/Algorithms/Recursion/RecursionExamples.java)
+### Complete implementation: `Algorithms/Recursion/RecursionExamples.java`
+
+```java
+package dsa.algorithms.recursion;
+
+public class RecursionExamples {
+    public static long factorial(int n){ return n<=1?1:n*factorial(n-1); }
+    public static int triangle(int n){ return n<=1? n : n + triangle(n-1); }
+    public static long fib(int n){ return n<=1? n : fib(n-1)+fib(n-2); }
+    public static void hanoi(int n, char from, char aux, char to){ if(n==0) return; hanoi(n-1, from, to, aux); System.out.println("Move "+n+" from "+from+" to "+to); hanoi(n-1, aux, from, to);}
+}
+```
 
 ### 1. **Factorial** - The Gateway to Recursion
 
@@ -165,7 +176,7 @@ public static void hanoi(int n, char from, char aux, char to) {
 
 ## Implementation
 
-### 📁 [View Complete Code](https://github.com/universitysjp/data-structures-and-algorithms/blob/main/Algorithms/Recursion/RecursionExamples.java)
+The complete source implementation is included earlier in this lesson.
 
 Our implementation showcases:
 - **Compact recursive solutions** for classic problems
