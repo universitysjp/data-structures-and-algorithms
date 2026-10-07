@@ -1,4 +1,0 @@
-# BFS
-
-- Implementation: BFS.java
-
