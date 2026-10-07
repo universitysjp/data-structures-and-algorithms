@@ -14,7 +14,7 @@ Recursion is a powerful programming technique where a method calls itself to sol
 - [Classic Examples](#classic-examples)
 - [Implementation](#implementation)
 - [Advanced Topics](#advanced-topics)
-- [Study Notes](#study-notes)
+- [Study Notes](#study-notes-for-students)
 
 ## Understanding Recursion
 

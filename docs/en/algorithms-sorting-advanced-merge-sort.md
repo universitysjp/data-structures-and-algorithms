@@ -13,7 +13,7 @@ Merge Sort is one of the most efficient and elegant sorting algorithms, employin
 - [Implementation](#implementation)
 - [Complexity Analysis](#complexity-analysis)
 - [Advantages & Disadvantages](#advantages--disadvantages)
-- [Study Notes](#study-notes)
+- [Study Notes](#study-notes-for-students)
 - [Practice Problems](#practice-problems)
 
 ## Algorithm Concept
